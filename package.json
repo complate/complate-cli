@@ -1,0 +1,29 @@
+{
+	"name": "complate-cli",
+	"version": "0.1.0",
+	"description": "command-line interface for complate",
+	"author": "FND",
+	"license": "Apache-2.0",
+	"homepage": "https://github.com/complate/complate-cli",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/complate/complate-cli.git"
+	},
+	"bugs": {
+		"url": "https://github.com/complate/complate-cli/issues"
+	},
+	"main": "index.js",
+	"bin": {
+		"complate": "bin/complate"
+	},
+	"scripts": {
+		"test": "eslint --cache *.js bin/* && echo ✓"
+	},
+	"dependencies": {
+		"complate-stream": "0.x",
+		"faucet-pipeline-jsx": "~1.0.0-rc.3"
+	},
+	"devDependencies": {
+		"eslint-config-fnd": "^1.3.0"
+	}
+}

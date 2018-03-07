@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+"use strict";
+
+let faucet = require("faucet-pipeline");
+let parseCLI = require("../index.js");
+
+let { rootDir, config, options } = parseCLI();
+faucet(rootDir, config, options);
